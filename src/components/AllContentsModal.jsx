@@ -69,9 +69,9 @@ const AllContentsModal = ({ setShowDetails }) => {
           </div>
           <div className="modal-footer">
             <div className="d-flex justify-content-center gap-3">
-              <Link to="/problem-2/all_content" className="btn btn-lg btn-outline-primary" type="button" data-bs-target="#exampleModal" >All Content</Link>
-              <Link to="/problem-2/us_country" className="btn btn-lg btn-outline-warning" type="button" >US Contacts</Link>
-              <Link to="/problem-2" className="btn btn-lg btn-outline-danger" type="button" >Close</Link>
+              <Link to="/problem-2/all_content" className="btn btn-lg" style={{ color: '#46139f', border: '1px solid #46139f' }} type="button" data-bs-target="#exampleModal" >All Content</Link>
+              <Link style={{ color: '#ff7f50', border: '1px solid #ff7f50' }} to="/problem-2/us_country" className="btn btn-lg " type="button" >US Contacts</Link>
+              <Link to="/problem-2" className="btn btn-lg" style={{ color: '#46139f', border: '1px solid #46139f' }} type="button" >Close</Link>
             </div>
           </div>
         </div>
