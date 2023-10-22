@@ -70,19 +70,24 @@ const Problem1 = () => {
                                 All
                             </button>
                         </li>
-                        {
-                            sortedStatuses?.map((sortedStatus, index) => (
-                                <li className="nav-item" key={index}>
-                                    <button
-                                        className={`nav-link ${status === sortedStatus && 'active'}`}
-                                        type="button"
-                                        onClick={() => handleStatusChange({ target: { value: sortedStatus } })}
-                                    >
-                                        {sortedStatus}
-                                    </button>
-                                </li>
-                            ))
-                        }
+                        <li className="nav-item">
+                            <button
+                                className={`nav-link ${status === 'Active' && 'active'}`}
+                                type="button"
+                                onClick={() => handleStatusChange({ target: { value: 'Active' } })}
+                            >
+                                Active
+                            </button>
+                        </li>
+                        <li className="nav-item">
+                            <button
+                                className={`nav-link ${status === 'Completed' && 'active'}`}
+                                type="button"
+                                onClick={() => handleStatusChange({ target: { value: 'Completed' } })}
+                            >
+                                Completed
+                            </button>
+                        </li>
                     </ul>
                     <table className="table table-striped">
                         <thead>
