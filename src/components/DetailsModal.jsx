@@ -11,11 +11,11 @@ const DetailsModal = ({ setShowDetails, country }) => {
             <Link onClick={() => setShowDetails(null)} to="/problem-2" className="btn-close" aria-label="Close"></Link>
           </div>
           <div className="modal-body d-flex justify-content-center">
-            <div class="card" style={{ width: '18rem' }}>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">name: {country.country.name}</li>
-                <li class="list-group-item">Phone: {country.phone}</li>
-                <li class="list-group-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit velit nostrum libero quidem porro mollitia, maiores iure eligendi architecto, incidunt deleniti eius cum laborum ut blanditiis? Modi perferendis eius dolorum?</li>
+            <div className="card" style={{ width: '18rem' }}>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">name: {country.country.name}</li>
+                <li className="list-group-item">Phone: {country.phone}</li>
+                <li className="list-group-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit velit nostrum libero quidem porro mollitia, maiores iure eligendi architecto, incidunt deleniti eius cum laborum ut blanditiis? Modi perferendis eius dolorum?</li>
               </ul>
             </div>
           </div>
